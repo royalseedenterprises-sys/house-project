@@ -47,7 +47,7 @@ const Login = () => {
       console.log("TOKEN SAVED:", res.data.token);
 
       // ✅ Redirect to home page
-      navigate("/");
+      navigate("/dashboardPage");
     } catch (err) {
       console.error(err.response?.data || err.message);
       setError(err.response?.data?.message || "Login failed");
